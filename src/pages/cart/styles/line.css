@@ -1,0 +1,187 @@
+.cart-line {
+  display: grid;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: var(--space-12);
+  align-items: center;
+  padding: var(--space-12);
+  border-radius: 18px;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.cart-line__media {
+  display: block;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--color-surface-muted);
+}
+
+.cart-line__media .mantine-Image-image {
+  background: transparent;
+}
+
+.cart-line__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  min-width: 0;
+}
+
+.cart-line__top,
+.cart-line__foot,
+.cart-line__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  min-width: 0;
+}
+
+.cart-line__top {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cart-line__name {
+  min-width: 0;
+  color: inherit;
+  font-family: var(--font-family-display), sans-serif;
+  font-size: 24px;
+  font-weight: var(--font-weight-regular);
+  font-synthesis: none;
+  letter-spacing: var(--letter-spacing-snug);
+  line-height: 0.95;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cart-line__name:hover {
+  color: var(--color-price);
+}
+
+.cart-remove {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: var(--space-28);
+  height: var(--space-28);
+  margin: calc(var(--space-4) * -1) calc(var(--space-4) * -1) 0 0;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-20);
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cart-remove:hover {
+  color: var(--color-price);
+  border-color: color-mix(in srgb, var(--color-price) 28%, transparent);
+  background: var(--color-white-55);
+}
+
+.cart-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  max-width: 100%;
+  padding: var(--space-4) var(--space-8) var(--space-4) var(--space-4);
+  border: 1px solid var(--color-white-62);
+  border-radius: var(--radius-full);
+  background: var(--color-surface-muted);
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-12);
+  line-height: 1.2;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.cart-chip:last-of-type,
+.cart-line__meta .cart-chip:nth-child(2) {
+  padding-left: var(--space-8);
+}
+
+.cart-chip__dot {
+  width: var(--space-16);
+  height: var(--space-16);
+  flex: none;
+  border-radius: 50%;
+  border: 1.5px solid rgba(40, 20, 50, 0.22);
+  box-shadow: inset 0 0 0 2px var(--color-white-72);
+}
+
+.cart-line__unit {
+  margin-left: auto;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-12);
+  white-space: nowrap;
+}
+
+.cart-qty {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  border: 1px solid var(--color-white-70);
+  border-radius: var(--radius-full);
+  background: var(--color-white-48);
+}
+
+.cart-qty__button {
+  display: grid;
+  place-items: center;
+  width: var(--space-28);
+  height: var(--space-28);
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-text-body);
+  font-size: var(--font-size-18);
+  line-height: 1;
+  cursor: pointer;
+}
+
+.cart-qty__button:hover:not(:disabled) {
+  background: var(--color-white-80);
+  color: var(--color-price);
+}
+
+.cart-qty__button:disabled {
+  color: #b3a6c4;
+  cursor: default;
+}
+
+.cart-qty .mantine-NumberInput-input {
+  width: 36px;
+  height: var(--space-28);
+  min-height: var(--space-28);
+  padding: 0;
+  border: 0;
+  background: transparent;
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+}
+
+.cart-qty:focus-within {
+  border-color: color-mix(in srgb, var(--color-price) 45%, transparent);
+}
+
+.cart-qty .mantine-NumberInput-input:focus {
+  outline: none;
+}
+
+.cart-line__foot {
+  justify-content: space-between;
+}
+
+.cart-line__sum {
+  margin: 0;
+  color: var(--color-price);
+  font-size: var(--font-size-16);
+  font-weight: var(--font-weight-black);
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}

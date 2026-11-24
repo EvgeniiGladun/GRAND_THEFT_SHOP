@@ -1,0 +1,50 @@
+.shop-content {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  padding: var(--space-20);
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-scrollbar) transparent;
+}
+
+.shop-sidebar::-webkit-scrollbar,
+.shop-content::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+}
+
+.shop-sidebar::-webkit-scrollbar-track,
+.shop-content::-webkit-scrollbar-track,
+.shop-sidebar::-webkit-scrollbar-corner,
+.shop-content::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+.shop-sidebar::-webkit-scrollbar-thumb,
+.shop-content::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: var(--radius-full);
+  background: rgba(36, 20, 46, 0.28);
+  background-clip: padding-box;
+}
+
+.shop-tabbar {
+  display: none;
+}
+
+.shop-tabbar__tab {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-family: var(--font-family-display), sans-serif;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-regular);
+  font-synthesis: none;
+  letter-spacing: var(--letter-spacing-ui);
+  text-transform: uppercase;
+}
+
+.shop-tabbar__tab--active {
+  color: var(--color-accent);
+}

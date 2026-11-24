@@ -1,0 +1,81 @@
+.boot__mark {
+  position: relative;
+  z-index: 1;
+  margin-top: -4vh;
+  font-family: var(--font-family-brand), sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-synthesis: none;
+  font-size: clamp(76px, 15vw, 156px);
+  line-height: 0.76;
+  letter-spacing: var(--letter-spacing-brand);
+  text-align: center;
+  text-transform: lowercase;
+  user-select: none;
+}
+
+.boot__line {
+  display: block;
+  color: #fff7fb;
+  -webkit-text-stroke: max(1px, 0.015em) #140810;
+  paint-order: stroke fill;
+  text-shadow:
+    0 2px 0 #1a0a12,
+    var(--space-4) 6px 0 #4a1030,
+    0 0 var(--space-28) color-mix(in srgb, var(--color-accent) 38%, transparent);
+  opacity: 0;
+}
+
+.boot--ready .boot__line {
+  animation: boot-stamp 0.58s cubic-bezier(0.16, 0.84, 0.28, 1.15) forwards;
+}
+
+.boot--ready .boot__line:nth-child(1) {
+  animation-delay: 0.06s;
+}
+
+.boot--ready .boot__line:nth-child(2) {
+  animation-delay: 0.18s;
+}
+
+.boot--ready .boot__line:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.boot__rule {
+  display: block;
+  width: 168px;
+  height: var(--space-4);
+  margin: var(--space-20) auto 0;
+  background: linear-gradient(90deg, #7c3aed, var(--color-accent));
+  box-shadow: 0 0 14px color-mix(in srgb, var(--color-accent) 75%, transparent);
+  transform: scaleX(0);
+}
+
+.boot--ready .boot__rule {
+  animation: boot-rule 0.42s 0.72s cubic-bezier(0.16, 0.84, 0.3, 1) forwards;
+}
+
+.boot__shine-clip {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.boot__shine {
+  position: absolute;
+  inset: -12% -8%;
+  background: linear-gradient(
+    100deg,
+    transparent 38%,
+    var(--color-white-72) 50%,
+    transparent 62%
+  );
+  mix-blend-mode: screen;
+  transform: translateX(-130%) skewX(-16deg);
+  pointer-events: none;
+}
+
+.boot--ready .boot__shine {
+  animation: boot-shine 0.85s 0.78s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}

@@ -1,0 +1,28 @@
+.image-gallery {
+  width: 100%;
+  min-width: 0;
+}
+
+.image-gallery .swiper {
+  width: 100%;
+  padding-bottom: var(--space-28);
+}
+
+.image-gallery .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-gallery .swiper-pagination {
+  bottom: 0;
+}
+
+.image-gallery .swiper-pagination-bullet {
+  background: rgba(36, 20, 46, 0.35);
+  opacity: 1;
+}
+
+.image-gallery .swiper-pagination-bullet-active {
+  background: var(--color-accent);
+}

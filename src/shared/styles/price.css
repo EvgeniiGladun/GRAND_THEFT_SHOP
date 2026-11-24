@@ -1,0 +1,44 @@
+.price-neon {
+  color: var(--color-price) !important;
+  font-weight: var(--font-weight-black);
+}
+
+.money {
+  position: relative;
+  display: inline-block;
+  font-family: var(--font-family-brand), sans-serif;
+  font-size: var(--font-size-22);
+  font-weight: var(--font-weight-regular);
+  font-synthesis: none;
+  font-style: normal;
+  letter-spacing: 0.01em;
+  line-height: 1;
+  white-space: nowrap;
+  color: inherit;
+}
+
+.money__flash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
+}
+
+.money__flash--gain {
+  color: #14c83c;
+}
+
+.money__flash--loss {
+  color: #f01414;
+}
+
+.money__flash--out {
+  opacity: 0;
+  transition: opacity 0.55s linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .money__flash--out {
+    transition: none;
+  }
+}

@@ -1,0 +1,52 @@
+@media (max-width: 768px) {
+  .shop-sidebar {
+    display: none;
+  }
+
+  .shop-header {
+    padding: 0;
+  }
+
+  .shop-header__bar {
+    justify-content: space-between;
+    padding: var(--space-12) var(--space-12) var(--space-12) var(--space-16);
+  }
+
+  .shop-header__brand {
+    display: block;
+    font-size: var(--font-size-20);
+  }
+
+  .cart-pill {
+    height: auto;
+    padding-top: var(--space-8);
+    padding-bottom: var(--space-8);
+    font-size: var(--font-size-12);
+  }
+
+  .app-stage {
+    padding: var(--space-12);
+  }
+
+  .shop-shell {
+    width: 100%;
+    height: calc(100vh - var(--space-24));
+    border-radius: var(--radius-16);
+  }
+
+  .shop-content {
+    padding: var(--space-16) var(--space-12);
+  }
+
+  .shop-tabbar {
+    flex: none;
+    z-index: 20;
+    display: flex;
+    justify-content: space-around;
+    padding: var(--space-12) var(--space-8) calc(var(--space-12) + env(safe-area-inset-bottom));
+    background: var(--color-white-28);
+    border-top: 1px solid var(--color-white-40);
+    backdrop-filter: blur(var(--space-16)) saturate(1.5);
+    -webkit-backdrop-filter: blur(var(--space-16)) saturate(1.5);
+  }
+}

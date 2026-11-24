@@ -1,0 +1,1 @@
+export { shopTheme } from './theme'

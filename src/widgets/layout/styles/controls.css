@@ -1,0 +1,31 @@
+.mantine-Button-root {
+  font-family: var(--font-family-display), sans-serif;
+  font-weight: var(--font-weight-regular);
+  font-synthesis: none;
+  letter-spacing: var(--letter-spacing-ui);
+}
+
+.shop-shell .mantine-Skeleton-visible::before {
+  background: transparent !important;
+}
+
+.shop-shell .mantine-Skeleton-visible::after {
+  background: var(--color-white-62) !important;
+}
+
+.shop-shell .mantine-TextInput-input,
+.shop-shell .mantine-Select-input,
+.shop-shell .mantine-Input-input,
+.shop-shell .mantine-NumberInput-input {
+  background-color: var(--color-white-38);
+  border-color: var(--color-border-glass);
+}
+
+.shop-shell .mantine-Paper-root,
+.shop-shell .mantine-Alert-root {
+  background-color: var(--color-white-38);
+  border-color: var(--color-white-50);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(var(--space-16)) saturate(1.4);
+  -webkit-backdrop-filter: blur(var(--space-16)) saturate(1.4);
+}

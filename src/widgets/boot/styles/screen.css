@@ -1,0 +1,31 @@
+.boot {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 46%, rgba(120, 18, 72, 0.55), rgba(7, 6, 12, 0.35) 38%, #07060c 72%),
+    #07060c;
+  color: #fff8fc;
+}
+
+.boot__glow {
+  position: absolute;
+  width: min(720px, 92vw);
+  height: min(420px, 54vh);
+  background: radial-gradient(
+    ellipse at center,
+    color-mix(in srgb, var(--color-accent) 34%, transparent),
+    rgba(124, 58, 237, 0.12) 46%,
+    transparent 72%
+  );
+  filter: blur(6px);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.boot--ready .boot__glow {
+  animation: boot-glow 2.4s ease-in-out infinite;
+}

@@ -1,0 +1,140 @@
+@keyframes boot-stamp {
+  0% {
+    opacity: 0;
+    transform: translateY(22px) scale(1.18);
+    filter: blur(var(--space-8));
+  }
+
+  55% {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes boot-rule {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes boot-shine {
+  to {
+    transform: translateX(130%) skewX(-16deg);
+  }
+}
+
+@keyframes boot-glow {
+  0%,
+  100% {
+    opacity: 0.72;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes boot-rise {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes boot-blink {
+  0%,
+  100% {
+    opacity: 0.45;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes boot-fill {
+  0% {
+    width: 0%;
+  }
+
+  22% {
+    width: 28%;
+  }
+
+  38% {
+    width: 28%;
+  }
+
+  62% {
+    width: 67%;
+  }
+
+  76% {
+    width: 67%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes boot-fade {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes boot-push {
+  to {
+    transform: scale(1.1);
+    filter: blur(1.5px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .boot--ready .boot__glow,
+  .boot--ready .boot__shine,
+  .boot--ready .boot__meter-label,
+  .boot--leaving .boot__mark {
+    animation: none;
+  }
+
+  .boot--ready .boot__line,
+  .boot--ready .boot__meter {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+
+  .boot--ready .boot__rule {
+    animation: none;
+    transform: none;
+  }
+
+  .boot--ready .boot__fill {
+    animation: none;
+    width: 100%;
+  }
+
+  .boot--ready .boot__glow {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .boot__mark {
+    font-size: clamp(64px, 20vw, 96px);
+  }
+
+  .boot__meter-label {
+    font-size: var(--font-size-16);
+  }
+}

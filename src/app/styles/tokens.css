@@ -1,0 +1,85 @@
+:root {
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-64: 64px;
+
+  --color-white: #fff;
+  --color-pink-500: #ff2d9a;
+  --color-pink-600: #e21888;
+  --color-violet-600: #6d28d9;
+  --color-ink-900: #1a1422;
+  --color-ink-800: #241c2e;
+  --color-ink-600: #5c4d68;
+  --color-ink-400: #8a7a98;
+  --color-stage: #1a1028;
+  --color-white-16: rgba(255, 255, 255, 0.16);
+  --color-white-20: rgba(255, 255, 255, 0.2);
+  --color-white-22: rgba(255, 255, 255, 0.22);
+  --color-white-28: rgba(255, 255, 255, 0.28);
+  --color-white-34: rgba(255, 255, 255, 0.34);
+  --color-white-38: rgba(255, 255, 255, 0.38);
+  --color-white-40: rgba(255, 255, 255, 0.4);
+  --color-white-42: rgba(255, 255, 255, 0.42);
+  --color-white-45: rgba(255, 255, 255, 0.45);
+  --color-white-48: rgba(255, 255, 255, 0.48);
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  --color-white-55: rgba(255, 255, 255, 0.55);
+  --color-white-62: rgba(255, 255, 255, 0.62);
+  --color-white-70: rgba(255, 255, 255, 0.7);
+  --color-white-72: rgba(255, 255, 255, 0.72);
+  --color-white-80: rgba(255, 255, 255, 0.8);
+  --color-ink-32: rgba(36, 20, 46, 0.32);
+
+  --font-family-display: "Bebas Neue", Montserrat;
+  --font-family-brand: Pricedown, Montserrat;
+  --font-size-12: 12px;
+  --font-size-16: 16px;
+  --font-size-18: 18px;
+  --font-size-20: 20px;
+  --font-size-22: 22px;
+  --font-size-32: 32px;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 800;
+
+  --letter-spacing-brand: 0.01em;
+  --letter-spacing-snug: 0.04em;
+  --letter-spacing-ui: 0.06em;
+  --letter-spacing-wide: 0.08em;
+
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-full: 999px;
+
+  --duration-fast: 0.16s;
+
+  --color-text-primary: var(--color-ink-900);
+  --color-text-body: var(--color-ink-800);
+  --color-text-secondary: var(--color-ink-600);
+  --color-text-muted: var(--color-ink-400);
+  --color-text-inverse: var(--color-white);
+  --color-bg-stage: var(--color-stage);
+  --color-accent: var(--color-pink-500);
+  --color-price: var(--color-pink-600);
+  --color-border-glass: var(--color-white-55);
+  --color-surface-glass: var(--color-white-34);
+  --color-surface-muted: var(--color-white-42);
+  --color-scrollbar: var(--color-ink-32);
+  --shadow-glass:
+    inset 0 1px 0 var(--color-white-70),
+    0 10px var(--space-24) rgba(50, 16, 40, 0.06);
+  --blur-glass: blur(var(--space-16)) saturate(1.45);
+  --gradient-accent: linear-gradient(
+    90deg,
+    rgba(124, 58, 237, 0.78),
+    color-mix(in srgb, var(--color-accent) 78%, transparent)
+  );
+  --gradient-promo: linear-gradient(160deg, rgba(255, 126, 191, 0.72), rgba(192, 132, 252, 0.58));
+}
