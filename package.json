@@ -2,6 +2,7 @@
   "name": "react-test-task",
   "version": "0.1.0",
   "private": true,
+  "main": "index.js",
   "homepage": "https://evgeniigladun.github.io/GRAND_THEFT_SHOP",
   "repository": {
     "type": "git",
